@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: pink;
+  background-image: url('_DSC7427.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.input-cont {
+  background-color: white;
+  padding: 30px;
+  border-radius: 7px;
+  width: 450px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#label1, #label2 {
+  font-size: 16px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+/* Hide the password toggle checkbox */
+#show-pass {
+  display: none;
+}
+
+/* Password Input */
+.pass-input {
+  width: 90%;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 35px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* When checkbox is checked, switch to text type using a hack */
+#show-pass:checked ~ .pass-input {
+  font-family: sans-serif;
+}
+
+/* Eye icon label */
+.eye-label {
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+}
+
+/* User icon */
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+}
+
+.input-container input[type="text"] {
+  width: 91%;
+  height: 30px;
+  padding-left: 35px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Buttons & Links */
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  height: 40px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+#a1, #a2 {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  margin-top: 10px;
+}
+#a1:hover, #a2:hover {
+  color: blue;
+}
+
+#a1 {
+  margin-left: 75%;
+}
+
+#a2 {
+  float: right;
+  margin-right: 5px;
+}
+
+#ch {
+  font-size: 14px;
+  padding-bottom: 30px;
+}
